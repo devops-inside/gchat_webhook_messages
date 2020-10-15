@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['gchat_webhook_message.py'],
-             pathex=['C:\\Users\\mosix\\dev\\python-dev\\gchat_webhook_messages'],
+             pathex=['/home/fabio/data/Fabio/dev/python/gchat_wh_message'],
              binaries=[],
              datas=[],
              hiddenimports=[],
@@ -30,4 +30,4 @@ exe = EXE(pyz,
           upx=True,
           upx_exclude=[],
           runtime_tmpdir=None,
-          console=False )
+          console=True )
