@@ -1,6 +1,7 @@
 from json import dumps
 from httplib2 import Http
 import tkinter as tk
+import os
 
 def send_message():
     url = gchat_url.get()
@@ -36,6 +37,7 @@ gchat_url_label.grid(row=0, column=0, sticky="SE", pady=10, padx=10)
 
 gchat_url = tk.Entry(window)
 gchat_url.grid(row=0, column=1, sticky="WE", padx=10, pady=10, columnspan=2)
+gchat_url.insert(tk.END, os.getenv('GCHAT_WH_URL', ""))
 
 message_label = tk.Label(window, text="Message:", background=bg_color, foreground=fg_color, font="Helvetica 10 bold")
 message_label.grid(row=1, column=0, sticky="SW", pady=10, padx=10)
