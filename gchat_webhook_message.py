@@ -23,7 +23,7 @@ def send_message():
         body=dumps(bot_message),
     )
 
-    message_response.delete(0, tk.END)
+    message_response.delete('1.0', tk.END)
     message_response.insert(tk.END, response)
 
 bg_color = '#233f57'
