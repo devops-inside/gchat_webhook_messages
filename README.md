@@ -1,5 +1,5 @@
 # gchat_webhook_messages
-A little test tool to send a message to Google Chat webhook
+A little test tool to send message to Google Chat webhook
 
 1. start the binary package or the python script
 2. insert the URL of the Google Chat webhook
